@@ -12,8 +12,9 @@ import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
 import { DetailsContainerModule } from './features/details-container/details-container.module';
 import { StoreModule } from '@ngrx/store';
-import { reducers, metaReducers } from './reducers';
+import { reducers, metaReducers } from './root-store/reducers';
 import { EffectsModule } from '@ngrx/effects';
+import { RootStoreModule } from './root-store/root-store.module';
 
 @NgModule({
   declarations: [
@@ -26,10 +27,7 @@ import { EffectsModule } from '@ngrx/effects';
     SharedModule,
     CoreModule,
     DetailsContainerModule,
-    StoreModule.forRoot(reducers, {
-      metaReducers
-    }),
-    EffectsModule.forRoot([]),
+    RootStoreModule,
   ],
   providers: [
     { provide: LoggerService, useClass: ConsoleLoggerService },

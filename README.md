@@ -89,6 +89,24 @@ ng g c pages/overview-page
 ng g c pages/details-page
 ```
 
+## 06_NgRx
+
+Install NgRX
+
+```shell
+ng add @ngrx/store@latest --minimal false
+ng add @ngrx/effects@latest
+
+echo "Install schematics to generate reducers and so on."
+ng add @ngrx/schematics@latest
+```
+
+Create RootStoreModule
+
+```shell
+ng g m root-store -m app
+```
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
