@@ -5,6 +5,7 @@ import { BExampleHooksComponent } from './b-example-hooks.component';
 
 
 @NgModule({
+  exports: [BExampleHooksComponent],
   declarations: [
     BExampleHooksComponent
   ],

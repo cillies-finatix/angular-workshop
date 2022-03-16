@@ -5,6 +5,7 @@ import { CExampleTemplateComponent } from './c-example-template.component';
 
 
 @NgModule({
+  exports: [CExampleTemplateComponent],
   declarations: [
     CExampleTemplateComponent
   ],

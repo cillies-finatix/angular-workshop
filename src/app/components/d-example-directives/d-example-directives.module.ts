@@ -6,6 +6,7 @@ import { HighlighterDirective } from './highlighter.directive';
 
 
 @NgModule({
+  exports: [DExampleDirectivesComponent],
   declarations: [
     DExampleDirectivesComponent,
     HighlighterDirective

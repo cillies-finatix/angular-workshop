@@ -6,6 +6,7 @@ import { ScalePipe } from './scale.pipe';
 
 
 @NgModule({
+  exports: [EExamplePipesComponent],
   declarations: [
     EExamplePipesComponent,
     ScalePipe

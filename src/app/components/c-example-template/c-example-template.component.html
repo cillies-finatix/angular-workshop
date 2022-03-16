@@ -6,7 +6,9 @@
 <p *ngIf="isInvisible">Not visible</p>
 
 <h2>NgFor by Example</h2>
-<p *ngFor="let item of items">{{ item }}</p>
+<ul>
+  <li *ngFor="let item of items; let idx=index">Index:{{idx}} / Value:{{ item }}</li>
+</ul>
 
 <h2>Pipes by Example</h2>
 <p>{{ moneyValue | currency:'EUR' }}</p>

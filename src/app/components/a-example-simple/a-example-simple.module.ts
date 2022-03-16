@@ -5,6 +5,7 @@ import { AExampleSimpleComponent } from './a-example-simple.component';
 
 
 @NgModule({
+  exports: [AExampleSimpleComponent],
   declarations: [
     AExampleSimpleComponent
   ],

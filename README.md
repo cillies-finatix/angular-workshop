@@ -10,21 +10,24 @@ Generated SCAMs via
 
 ```shell
 ng g m components/a-example-simple
-ng g c components/a-example-simple
+ng g c components/a-example-simple --export
 
 ng g m components/b-example-hooks
-ng g c components/b-example-hooks
+ng g c components/b-example-hooks --export
 
 ng g m components/c-example-template
-ng g c components/c-example-template
+ng g c components/c-example-template --export
 
 ng g m components/d-example-directives
-ng g c components/d-example-directives
+ng g c components/d-example-directives --export
 ng g d components/d-example-directives/highlighter
 
 ng g m components/e-example-pipes
-ng g c components/e-example-pipes
+ng g c components/e-example-pipes --export
 ng g p components/e-example-pipes/scale
+
+ng g m components/demo --flat
+ng g c components/demo --flat --export
 ```
 
 ## Development server
