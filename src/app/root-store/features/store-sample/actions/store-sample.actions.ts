@@ -6,7 +6,7 @@ export const loadStoreSamples = createAction(
 
 export const loadStoreSamplesSuccess = createAction(
   '[StoreSample] Load StoreSamples Success',
-  props<{ data: any }>()
+  props<{ data: string[] }>()
 );
 
 export const loadStoreSamplesFailure = createAction(

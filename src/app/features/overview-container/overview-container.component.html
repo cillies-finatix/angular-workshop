@@ -1,1 +1,7 @@
-<p>overview-container works!</p>
+<p>Store Samples$:</p>
+
+<strong *ngIf="loading$ | async">Loading ... please wait ...</strong>
+<app-list [items]="samples$ | async"></app-list>
+
+<p>Load Pokemon Names instead:</p>
+<button (click)="load()" [disabled]="loading$ | async">Trigger Load</button>

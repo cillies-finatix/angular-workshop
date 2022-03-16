@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { OverviewContainerComponent } from './overview-container.component';
+import { ListModule } from 'src/app/shared/list/list.module';
 
 
 
@@ -12,7 +13,8 @@ import { OverviewContainerComponent } from './overview-container.component';
     OverviewContainerComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ListModule,
   ]
 })
 export class OverviewContainerModule { }
