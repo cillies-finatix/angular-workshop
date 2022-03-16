@@ -1,0 +1,18 @@
+<h2>Interpolation by Example</h2>
+<p>{{ myVar }}</p>
+
+<h2>NgIF by Example</h2>
+<p *ngIf="isVisible">Should be visible</p>
+<p *ngIf="isInvisible">Not visible</p>
+
+<h2>NgFor by Example</h2>
+<p *ngFor="let item of items">{{ item }}</p>
+
+<h2>Pipes by Example</h2>
+<p>{{ moneyValue | currency:'EUR' }}</p>
+
+<h2>Bindings by Example</h2>
+<p [class]="bindedCssClass" [attr.id]="'inline_string'" [innerHtml]="htmlString"></p>
+
+<h2>Events by Example</h2>
+<button (click)="buttonClicked($event)">Klick mich</button>

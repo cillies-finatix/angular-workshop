@@ -4,6 +4,29 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Command: `npx -p @angular/cli@latest ng new angular-workshop --routing --style scss --defaults`
 
+## 01_Components
+
+Generated SCAMs via
+
+```shell
+ng g m components/a-example-simple
+ng g c components/a-example-simple
+
+ng g m components/b-example-hooks
+ng g c components/b-example-hooks
+
+ng g m components/c-example-template
+ng g c components/c-example-template
+
+ng g m components/d-example-directives
+ng g c components/d-example-directives
+ng g d components/d-example-directives/highlighter
+
+ng g m components/e-example-pipes
+ng g c components/e-example-pipes
+ng g p components/e-example-pipes/scale
+```
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
