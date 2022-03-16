@@ -11,6 +11,9 @@ import { AlertLoggerService } from './services/logger/alert-logger.service';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
 import { DetailsContainerModule } from './features/details-container/details-container.module';
+import { StoreModule } from '@ngrx/store';
+import { reducers, metaReducers } from './reducers';
+import { EffectsModule } from '@ngrx/effects';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,10 @@ import { DetailsContainerModule } from './features/details-container/details-con
     SharedModule,
     CoreModule,
     DetailsContainerModule,
+    StoreModule.forRoot(reducers, {
+      metaReducers
+    }),
+    EffectsModule.forRoot([]),
   ],
   providers: [
     { provide: LoggerService, useClass: ConsoleLoggerService },
