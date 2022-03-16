@@ -105,6 +105,10 @@ Create RootStoreModule
 
 ```shell
 ng g m root-store -m app
+
+echo "Generate Feature Store module"
+ng g m root-store/features/store-sample -m root-store
+ng g feature root-store/features/store-sample/store-sample -a -c -g -m root-store/features/store-sample --defaults
 ```
 
 ## Development server
