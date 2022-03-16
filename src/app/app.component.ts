@@ -7,9 +7,10 @@ import { SampleService } from './services/sample.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   title = 'angular-workshop';
 
+  /**
   constructor(
     private readonly sampleService: SampleService,
     private readonly sampleWithTokenService: SampleWithTokenService,
@@ -20,4 +21,5 @@ export class AppComponent implements OnInit {
     this.sampleService.doSomething();
     this.sampleWithTokenService.doSomething();
   }
+  /**/
 }
