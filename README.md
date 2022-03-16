@@ -76,6 +76,19 @@ ng g c features/overview-container --export
 ng g c features/details-container --export
 ```
 
+## 04_Pages
+
+Generated separate Pages
+
+```shell
+echo "Create Feature Modules"
+ng g m pages/overview-page --routing --route 'overview' -m app
+ng g m pages/details-page --routing --route 'details/:id' -m app
+echo "Create sample Components"
+ng g c pages/overview-page
+ng g c pages/details-page
+```
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
