@@ -30,6 +30,21 @@ ng g m components/demo --flat
 ng g c components/demo --flat --export
 ```
 
+## 02_Depdency_Injection
+
+Generated Services/Providers
+
+```shell
+ng g s services/sample &
+ng g i services/logger/logger &
+ng g class services/logger/logger-token &
+ng g s services/logger/logger &
+ng g s services/logger/console-logger &
+ng g s services/logger/alert-logger &
+ng g s services/sample-with-token &
+
+```
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
