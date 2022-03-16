@@ -10,6 +10,7 @@ import { LOGGER_TOKEN } from './services/logger/logger-token';
 import { AlertLoggerService } from './services/logger/alert-logger.service';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
+import { DetailsContainerModule } from './features/details-container/details-container.module';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { CoreModule } from './core/core.module';
     DemoModule,
     SharedModule,
     CoreModule,
+    DetailsContainerModule,
   ],
   providers: [
     { provide: LoggerService, useClass: ConsoleLoggerService },

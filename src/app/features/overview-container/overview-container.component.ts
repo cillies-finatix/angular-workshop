@@ -5,8 +5,11 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './overview-container.component.html',
   styleUrls: ['./overview-container.component.scss']
 })
-export class OverviewContainerComponent  {
+export class OverviewContainerComponent implements OnInit {
 
-  // Try to open: http://localhost:4200/overview
+  constructor() { }
+
+  ngOnInit(): void {
+  }
 
 }

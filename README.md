@@ -69,11 +69,11 @@ echo 'export const isTruthy = (val: any) => !!val' > src/app/shared/utils/isTrut
 echo 'export const isFalsy = (val: any) => !val' > src/app/shared/utils/isFalsy.ts
 
 echo "Create Feature Modules"
-ng g m features/overview-container --routing --route 'overview' -m app
-ng g m features/details-container --routing --route 'details/:id' -m app
+ng g m features/overview-container
+ng g m features/details-container
 echo "Create sample Components"
-ng g c features/overview-container
-ng g c features/details-container
+ng g c features/overview-container --export
+ng g c features/details-container --export
 ```
 
 ## Development server
