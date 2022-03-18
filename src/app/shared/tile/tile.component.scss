@@ -1,0 +1,35 @@
+.navigation-tile {
+  min-width: 300px;
+  padding: 2rem;
+  background-color: white;
+  cursor: pointer;
+  box-shadow: 0 5px 5px -3px #0003, 0 8px 10px 1px #00000024, 0 3px 14px 2px #0000001f;
+}
+
+.title {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+}
+
+.float-right {
+  margin-left: auto;
+  order: 2;
+}
+
+.border-bottom {
+  border-bottom: 1px theme('colors.coldgray.150') solid;
+  padding-right: 14px;
+  padding-bottom: 10px;
+}
+
+button {
+  min-width: 0;
+}
+
+.row-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 14px;
+}
