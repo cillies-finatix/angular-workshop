@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {CommunicationService} from "../../services/communication.service";
 
 @Component({
   selector: 'app-overview',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OverviewComponent implements OnInit {
 
-  constructor() { }
+  constructor(private communicationService: CommunicationService) {
+    this.communicationService.observable.subscribe(value => console.log(value));
+  }
 
   ngOnInit(): void {
   }
