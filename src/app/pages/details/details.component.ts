@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Pet} from "../../models/Pet";
 
 @Component({
   selector: 'app-details',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./details.component.scss']
 })
 export class DetailsComponent implements OnInit {
+  public pet: Pet = {animal: "default", id: 0, name: "default"};
 
   constructor() { }
 

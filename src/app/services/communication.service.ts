@@ -1,12 +1,8 @@
 import {Injectable} from '@angular/core';
 import {Observable, ReplaySubject} from "rxjs";
 import {HttpClient} from "@angular/common/http";
+import {Pet} from "../models/Pet";
 
-interface Pet {
-  id: number;
-  name: string;
-  animal: string;
-}
 
 @Injectable({
   providedIn: 'root'
