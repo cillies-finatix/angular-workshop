@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {CommunicationService} from "../../services/communication.service";
 import {Pet} from "../../models/Pet";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-overview',
@@ -10,11 +11,13 @@ import {Pet} from "../../models/Pet";
 export class OverviewComponent implements OnInit {
   public pets: Pet[] = [];
 
-  constructor(private communicationService: CommunicationService) {
-    this.communicationService.observable.subscribe(value => console.log(value));
-  }
+  constructor(private communicationService: CommunicationService, private router: Router) { }
 
   ngOnInit(): void {
+    this.communicationService.observable.subscribe(value => this.pets = value);
   }
 
+  logTileName(event: number) {
+    this.router.navigate(['/details', event]);
+  }
 }

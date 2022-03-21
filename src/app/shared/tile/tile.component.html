@@ -1,13 +1,13 @@
 <button class="mat-elevation-z8 navigation-tile">
   <div class="row-inner">
-    <div class="title">A fine title</div>
-    <button class="float-right">
+    <div class="title">{{pet?.name}}</div>
+    <button (click)="tileIsClicked()" class="float-right">
       <span>+</span>
     </button>
   </div>
   <br/>
   <div class="row-inner border-bottom">
-    Hello there
+    {{pet?.animal}}
     <span class="float-right">-></span>
   </div>
 </button>

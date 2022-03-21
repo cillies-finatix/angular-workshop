@@ -1,5 +1,3 @@
 <h1>What a nice overview component</h1>
-<app-tile></app-tile>
-<app-tile></app-tile>
-<app-tile></app-tile>
-<app-tile></app-tile>
+<app-tile *ngFor="let pet of pets" [pet]="pet" (clickTile)="logTileName($event)"></app-tile>
+

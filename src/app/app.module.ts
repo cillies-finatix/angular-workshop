@@ -3,7 +3,6 @@ import {BrowserModule} from '@angular/platform-browser';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
-import {CommunicationService} from "./services/communication.service";
 import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
@@ -13,7 +12,7 @@ import {HttpClientModule} from "@angular/common/http";
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [CommunicationService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {
