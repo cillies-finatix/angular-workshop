@@ -3,10 +3,18 @@
 <app-list [items]="['item 1','item 2','item 3','item 4']"></app-list>
 
 <ul>
-  <li class="p-4">HTML Item 1</li>
+  <li class="p-4" (click)="openDialog()">Open Dialog</li>
   <li class="rounded bg-slate-400/50">HTML Item 2</li>
   <li class="text-orange-700">HTML Item 3</li>
 </ul>
+
+<mat-chip-list aria-label="Fish selection">
+  <mat-chip>One fish</mat-chip>
+  <mat-chip>Two fish</mat-chip>
+  <mat-chip color="primary" selected>Primary fish</mat-chip>
+  <mat-chip color="accent" selected>Accent fish</mat-chip>
+</mat-chip-list>
+
 
 <router-outlet></router-outlet>
 

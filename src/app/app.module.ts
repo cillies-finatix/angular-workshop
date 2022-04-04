@@ -11,10 +11,15 @@ import { AlertLoggerService } from './services/logger/alert-logger.service';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
 import { DetailsContainerModule } from './features/details-container/details-container.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DialogComponent } from './dialog/dialog.component';
+import {MatDialogModule} from "@angular/material/dialog";
+import {MatChipsModule} from "@angular/material/chips";
 
 @NgModule({
   declarations: [
     AppComponent,
+    DialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -23,6 +28,9 @@ import { DetailsContainerModule } from './features/details-container/details-con
     SharedModule,
     CoreModule,
     DetailsContainerModule,
+    MatDialogModule,
+    BrowserAnimationsModule,
+    MatChipsModule,
   ],
   providers: [
     { provide: LoggerService, useClass: ConsoleLoggerService },
