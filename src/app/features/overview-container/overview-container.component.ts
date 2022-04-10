@@ -1,12 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-overview-container',
   templateUrl: './overview-container.component.html',
-  styleUrls: ['./overview-container.component.scss']
+  styleUrls: ['./overview-container.component.scss'],
 })
-export class OverviewContainerComponent {
+export class OverviewContainerComponent implements OnInit, OnDestroy {
+  constructor() {
+    console.log('Overview Container constructor');
+  }
+  ngOnInit(): void {
+    console.log('Overview Container ngOnInit');
+  }
 
-  // Try to open: http://localhost:4200/overview
-
+  ngOnDestroy(): void {
+    console.log('Overview Container ngOnDestroy');
+  }
 }

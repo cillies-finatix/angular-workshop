@@ -1,25 +1,18 @@
-import { Component, OnInit } from '@angular/core';
-import { SampleWithTokenService } from './services/sample-with-token.service';
-import { SampleService } from './services/sample.service';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit, OnDestroy {
   title = 'angular-workshop';
 
-  /**
-  constructor(
-    private readonly sampleService: SampleService,
-    private readonly sampleWithTokenService: SampleWithTokenService,
-    ){
-
-  }
   ngOnInit(): void {
-    this.sampleService.doSomething();
-    this.sampleWithTokenService.doSomething();
+    console.log('AppComponent ngOnInit');
   }
-  /**/
+
+  ngOnDestroy(): void {
+    console.log('AppComponent ngOnDestroy');
+  }
 }
