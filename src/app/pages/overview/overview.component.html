@@ -1,3 +1,17 @@
 <h1>What a nice overview component</h1>
-<app-tile *ngFor="let pet of pets" [pet]="pet" (clickTile)="logTileName($event)"></app-tile>
 
+<form [formGroup]="formGroup">
+  <input type="text" formControlName="meineEingabe" (change)="onChange($event)" value="Eingabefeld Startwert">
+</form>
+<pre>{{ formGroup.value | json }}</pre>
+<select name="" id="">
+  <option value="1">Wert 1</option>
+  <option value="2">Wert 2</option>
+  <option value="3">Wert 3</option>
+</select>
+
+<br>
+
+<app-tile *ngFor="let pet of pets$ | async" [pet]="pet" (clickTile)="logTileName($event)"></app-tile>
+
+<button (click)="flush()">flush</button>

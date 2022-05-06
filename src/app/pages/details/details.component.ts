@@ -15,7 +15,7 @@ export class DetailsComponent {
   constructor(private route: ActivatedRoute, private communicationService: CommunicationService) {
     this.pet$ = this.route.params
       .pipe(
-        mergeMap((res) => this.communicationService.observable
+        mergeMap((res) => this.communicationService.getPets()
           .pipe(
             map(petList => petList.find(
               pet => pet.id == res['id'])
